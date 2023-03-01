@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "rp:start": "react-native webpack-start",
+    "rp:ios": "react-native run-ios",
+    "rp:android": "react-native run-android"
   },
   "dependencies": {
     "expo": "~48.0.4",
@@ -14,12 +17,18 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.3",
-    "react-native-web": "~0.18.10"
+    "react-native-web": "~0.18.10",
+    "expo-splash-screen": "~0.18.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@callstack/repack": "^3.1.0",
     "@types/react": "~18.0.14",
-    "typescript": "^4.9.4"
+    "babel-loader": "^9.1.2",
+    "metro-react-native-babel-preset": "^0.75.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0"
   },
   "private": true
 }
