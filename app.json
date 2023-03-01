@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "expo-repack-starter",
+    "slug": "expo-repack-starter",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
